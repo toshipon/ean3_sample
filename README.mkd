@@ -1,6 +1,6 @@
 EAN API (Hotel API version 3)のラッパープラグインのサンプルソースです。
 
-== How to use
+## How to use
 
 サンプルプロジェクトのrailsバージョンは3.1.1のため3.1.1をインストールしてください。
 
