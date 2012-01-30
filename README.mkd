@@ -16,7 +16,8 @@ bundleを使って依存ライブラリをDLしてください。
     cd ean3_sample
     bundle install
 
-EAN developer hub( https://developer.ean.com/ )で取得したapikeyとsecretkeyを以下設定ファイルに記述してください。
+EAN developer hub( https://developer.ean.com/ )で取得したapikeyとsecretkeyとcidを以下設定ファイルに記述してください。
+なお、開発中の場合は、cidは固定の"55505"となります。
 
     vi config/ean3_config.yml
 

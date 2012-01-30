@@ -6,6 +6,7 @@ class HotelsController < ApplicationController
     options = {
         :apikey => EAN3_CONFIG["apikey"],
         :secret => EAN3_CONFIG["secret"],
+        :cid => EAN3_CONFIG["cid"],
         :minorRev => 12,
         :locale => "ja_JP",
         :currencyCode => "JPY",
@@ -13,7 +14,8 @@ class HotelsController < ApplicationController
     }
     @client = Ean3::Client.new(options)
     @response = @client.getList({
-        :arrivalDate => "02/10/2012",
+        :arrivalDate => "03/10/2012",
+        :departureDate => "03/13/2012"
         :city => "tokyo"
     })
     respond_to do |format|
